@@ -1,0 +1,206 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: 0px;
+    font-family: 'Press Start 2P', cursive;
+}
+body {
+  font-family: 'Press Start 2P', cursive;
+  background-color: #F1EBDD;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.gameName{
+    font-size: 40px;
+    color: #353430;
+    margin: 40px;
+}
+
+.homeImg{
+    height: 350px;
+    width: 600px;
+}
+#home-btn{
+    font-size: 24px;
+    color:#d9dfdb;
+    background-color: #96765a;
+    font-family: 'Press Start 2P', cursive;
+    height: 70px;
+    width: 300px;
+    margin: 40px;
+    border-radius: 20px;
+    border:3px solid #353430;
+    box-shadow: 5px 5px 1px #353430;
+}
+#home-btn{
+   cursor: pointer;
+   transition: transform 0.1s ease;
+}
+#home-btn:active {
+  transform: translateY(5px);
+}
+#home-btn:hover{
+    background-color: #89705b;
+}
+
+/* login page styling */
+
+#login-btn{
+    font-size: 24px;
+    color:#d9dfdb;
+    background-color: #96765a;
+    font-family: 'Press Start 2P', cursive;
+    height: 70px;
+    width: 300px;
+    margin: 40px;
+    border-radius: 20px;
+    border:3px solid #353430;
+    box-shadow: 5px 5px 1px #353430;
+}
+#login-btn{
+   cursor: pointer;
+   transition: transform 0.1s ease;
+}
+#login-btn:active {
+  transform: translateY(5px);
+}
+#loginbtn:hover{
+    background-color: #89705b;
+}
+
+#loginInput{
+    background-color: #353430;
+    font-size: 24px;
+    color:#d9dfdb;
+    height: 100px;
+    width: 450px;
+    padding: 10px 50px;
+    border-radius: 20px;
+    border:3px solid #0f0f0f;
+}
+#loginInput::placeholder{
+    font-size: 24px;
+    color:#d9dfdb;
+}
+.loginImg{
+    height: 350px;
+    width: 600px;
+    position: relative;
+    top: 50px;
+}
+
+/* the tips page styling */
+.tipName{
+    font-size: 37px;
+    color: #ff3939;
+    margin: 30px;
+}
+.tipImg{
+    height: 250px;
+    width: 250px;
+    border:6px solid #353430;
+    border-radius: 20px;
+}
+#tip-btn{
+    font-size: 24px;
+    color:#d9dfdb;
+    background-color: #96765a;
+    font-family: 'Press Start 2P', cursive;
+    height: 70px;
+    width: 250px;
+    margin: 40px;
+    border-radius: 20px;
+    border:3px solid #353430;
+    box-shadow: 5px 5px 1px #353430;
+    position: relative;
+    left: 400px;
+}
+#tip-btn{
+   cursor: pointer;
+   transition: transform 0.1s ease;
+}
+#tip-btn:active {
+  transform: translateY(5px);
+}
+#tip-btn:hover{
+    background-color: #89705b;
+}
+#gameTips{
+    font-size: 40px;
+    color: #353430;
+    margin: 28px;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .homeImg,
+    .loginImg {
+        width: 90vw;
+        height: auto;
+        max-width: 100%;
+    }
+    #loginInput {
+        width: 80vw;
+        min-width: 200px;
+        font-size: 18px;
+        height: 70px;
+        padding: 10px 20px;
+    }
+    #home-btn,
+    #login-btn,
+    #tip-btn {
+        width: 80vw;
+        min-width: 150px;
+        font-size: 18px;
+        height: 55px;
+        margin: 20px;
+    }
+    #tip-btn {
+        left: 0;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .tipImg {
+        width: 60vw;
+        max-width: 200px;
+        height: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .gameName,
+    #gameTips {
+        font-size: 30px;
+        margin: 10px 0px;
+    }
+    .tipName {
+        font-size: 18px;
+        margin: 12px;
+    }
+    .tipImg {
+        width: 40vw;
+        max-width: 120px;
+        border-width: 3px;
+        border-radius: 10px;
+    }
+    #loginInput {
+        font-size: 14px;
+        height: 40px;
+        padding: 6px 10px;
+    }
+    #home-btn,
+    #login-btn,
+    #tip-btn {
+        font-size: 14px;
+        height: 40px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 1px #353430;
+    }
+    body {
+        padding: 10px;
+    }
+}

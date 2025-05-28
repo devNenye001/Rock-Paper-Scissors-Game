@@ -1,0 +1,132 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: 0px;
+    font-family: 'Press Start 2P', cursive;
+}
+body {
+  padding: 20px;
+  font-family: 'Press Start 2P', cursive;
+  background-color: #F1EBDD;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.scoreBoard{
+    height: 70px;
+    width: 600px;
+    margin: 20px;
+    position:relative;
+    left: 480px;
+    display: flex;
+}
+.pfp{
+    height: 70px;
+}
+.youScore, .CPUscore{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 180px;
+    border: 2px solid #353430;
+}
+.youScore{
+    border-radius: 20px 0px 0px 20px;
+}
+.CPUscore{
+    border-radius: 0px 20px 20px 0px;
+}
+
+
+/* my hands */
+
+.myhands{
+    width: 50vw;
+    height: 35vh;
+    border: 6px solid black;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #96765A;
+}
+.hand{
+    background-color: #F1EBDD;
+    padding: 5px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 180px;
+    border: 6px solid black;
+    border-radius: 20px;
+}
+
+#CPUhand{
+    background-color: #96765A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin: 20px;
+    object-fit: center;
+    width: 180px;
+    height: 180px;
+    border: 6px solid black;
+    border-radius: 20px;
+    margin: 20px;
+}
+#CPUhand img{
+    height: 100px;
+}
+.hand:hover{
+    width: 190px;
+    height: 190px;
+    background-color: #cec7b3;
+}
+
+@media (max-width: 800px) {
+    .scoreBoard {
+        width: 95vw;
+        left: 0;
+        margin: 10px 0;
+    }
+    .youScore, .CPUscore {
+        width: 35vw;
+        min-width: 90px;
+        height: 35px;
+        font-size: 0.7em;
+        padding: 5px;
+    }
+    .pfp {
+        height: 35px;
+    }
+    .myhands {
+        width: 95vw;
+        height: 29vh;
+        border-width: 3px;
+        border-radius: 10px;
+    }
+    .hand, #CPUhand {
+        width: 150px;
+        height: 150px;
+        border-width: 3px;
+        border-radius: 10px;
+        margin: 8px;
+        padding: 2px;
+    }
+    #CPUhand img {
+        height: 100px;
+    }
+    .hand:hover {
+        width: 90px;
+        height: 90px;
+    }
+    body {
+        padding: 5px;
+    }
+}

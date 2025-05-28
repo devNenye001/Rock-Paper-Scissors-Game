@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/images/favicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="game.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Rock-Paper-Scissors Game- Do you think you can win?</title>
+</head>
+<body>
+    <div class="scoreBoard">
+        <div class="youScore">
+                <img src="/images/you 3 pfp.gif" alt="Your profile picture" class="pfp">
+                <label for="text" class="Name" id="myScore">You:0</label>
+            </div>
+        <div class="CPUscore">
+                <img src="/images/home video.gif" alt="CPU profile picture" class="pfp">
+                <label for="text" class="Name" id="CPUscore">Coco:2</label>
+            </div>
+        </div>
+    </div>
+
+    <div id="CPUhand">
+        <img src="" alt="">
+    </div>
+   <div class="myhands">
+    <button class="hand" data-choice="rock" id="finger">
+        <img src="/images/rock.png" alt="rock hand" height="100px">
+    </button>
+    <button class="hand" data-choice="paper" id="finger">
+        <img src="/images/paper.png" alt="paper hand" height="100px">
+    </button>
+    <button class="hand" data-choice="scissors" id="finger">
+        <img src="/images/scissors.png" alt="scissors hand" height="100px">
+    </button>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>

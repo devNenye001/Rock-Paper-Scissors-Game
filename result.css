@@ -1,0 +1,113 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: 0px;
+    font-family: 'Press Start 2P', cursive;
+}
+body {
+  padding: 20px;
+  font-family: 'Press Start 2P', cursive;
+  background-color: #F8A6A6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.winImg{
+    height: 300px;
+}
+#message1{
+    font-size: 60px;
+    color: #353430;
+    margin: 20px;
+}
+.message2{
+    font-size: 20px;
+    color: #353430;
+}
+#result-btn{
+    font-size: 24px;
+    color:#d9dfdb;
+    background-color: #FF3939;
+    font-family: 'Press Start 2P', cursive;
+    height: 70px;
+    width: 300px;
+    margin: 40px;
+    border-radius: 20px;
+    border:3px solid #353430;
+    box-shadow: 5px 5px 1px #353430;
+}
+#result-btn{
+   cursor: pointer;
+   transition: transform 0.1s ease;
+}
+#result-btn:active {
+  transform: translateY(5px);
+}
+#result-btn:hover{
+    background-color: #fd7878;
+}
+
+/* the hamster message */
+.winMessage{
+    position: relative;
+    top:-100px;
+    left: 500px;
+}
+.guyMsg{
+    height: 50px;
+    width: 180px;
+    padding: 10px;
+    border: 3px dashed #353430;
+    background-color: #D9DFDB ;
+    border-radius: 20px;
+    color:#353430;
+    position: absolute;
+    left: -180px;
+    bottom: 40px;
+}
+.Message{
+    height: 100px;
+}
+.resultImg{
+    height: 100px;
+    border:3px solid #353430;
+    border-radius: 50px;
+}
+
+/* lose page styling */
+.loseBody{
+    background-color: #A6CA82;
+}
+.lose-btn{
+    background-color: #708F57 !important;
+}
+#lose-guyMsg{
+    height: 30px !important;
+    width: 160px !important;
+    left: -160px;
+}
+
+/* draw page styling */
+.drawBody{
+    background-color: #D9DFDB;
+}
+.lose-btn{
+    background-color: #96765A !important;
+}
+#lose-guyMsg{
+    height: 50px !important;
+    width: 160px !important;
+    left: -160px;
+    background-color: #353430;
+    color: #D9DFDB;
+    border: 3px dashed black;
+}
+#drawImg{
+    height: 250px !important;
+    width: 250px !important;
+    border:6px solid #353430 !important;
+    border-radius: 20px !important;
+    margin: 30px;
+}
