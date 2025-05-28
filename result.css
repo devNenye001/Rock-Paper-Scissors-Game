@@ -89,25 +89,84 @@ body {
     left: -160px;
 }
 
-/* draw page styling */
-.drawBody{
-    background-color: #D9DFDB;
-}
-.lose-btn{
-    background-color: #96765A !important;
-}
-#lose-guyMsg{
-    height: 50px !important;
-    width: 160px !important;
-    left: -160px;
-    background-color: #353430;
-    color: #D9DFDB;
-    border: 3px dashed black;
-}
-#drawImg{
-    height: 250px !important;
-    width: 250px !important;
-    border:6px solid #353430 !important;
-    border-radius: 20px !important;
-    margin: 30px;
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .winImg {
+        height: 180px;
+        margin-bottom: 16px;
+    }
+    #message1 {
+        font-size: 38px;
+        margin: 18px 0 18px 0;
+        text-align: center;
+    }
+    .message2 {
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 32px;
+    }
+    #result-btn {
+        font-size: 16px;
+        height: 50px;
+        width: 180px;
+        margin-top: 50px; /* 50px distance from the text above */
+        margin-bottom: 16px;
+        border-radius: 12px;
+        display: block;
+    }
+    .winMessage {
+        top: 10px;
+        left: auto;
+        right: 10px;
+        position: absolute;
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        margin-bottom: 16px;
+    }
+    .guyMsg {
+        height: 32px;
+        width: 120px;
+        font-size: 10px;
+        left: auto;
+        right: 0;
+        bottom: auto;
+        top: 0;
+        padding: 6px;
+        border-radius: 12px;
+        margin-right: 0;
+        margin-top: 0;
+        position: relative;
+    }
+    .Message {
+        height: 60px;
+        margin-bottom: 12px;
+    }
+    .resultImg {
+        height: 60px;
+        border-radius: 30px;
+        margin-bottom: 12px;
+    }
+    .loseBody {
+        padding: 10px;
+    }
+    #lose-guyMsg {
+        height: 20px !important;
+        width: 90px !important;
+        left: auto;
+        right: 0;
+        top: 0;
+        font-size: 10px;
+        padding: 4px;
+        border-radius: 10px;
+        position: relative;
+        margin-top: 0;
+        margin-right: 0;
+    }
 }
