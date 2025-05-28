@@ -172,10 +172,15 @@ body {
 }
 
 @media (max-width: 600px) {
+
+    body{
+        padding: 20px;
+    }
     .gameName,
     #gameTips {
-        font-size: 30px;
-        margin: 10px 0px;
+        font-size: 40px;
+        margin: 30px 0px;
+        text-align: center;
     }
     .tipName {
         font-size: 18px;
@@ -188,9 +193,9 @@ body {
         border-radius: 10px;
     }
     #loginInput {
-        font-size: 14px;
-        height: 40px;
-        padding: 6px 10px;
+        font-size: 20px;
+        height: 70px;
+        padding: 6px 30px;
     }
     #home-btn,
     #login-btn,

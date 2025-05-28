@@ -94,6 +94,8 @@ body {
         width: 95vw;
         left: 0;
         margin: 10px 0;
+        display: flex;
+        justify-content: center;
     }
     .youScore, .CPUscore {
         width: 35vw;
@@ -123,10 +125,10 @@ body {
         height: 100px;
     }
     .hand:hover {
-        width: 90px;
-        height: 90px;
+        width: 160px;
+        height: 160px;
     }
     body {
-        padding: 5px;
+        padding: 15px;
     }
 }
